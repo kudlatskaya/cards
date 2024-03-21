@@ -4,9 +4,12 @@ import { Button } from './'
 
 const meta = {
   argTypes: {
+    title: {
+      control: { type: 'text' },
+    },
     variant: {
       control: { type: 'radio' },
-      options: ['primary', 'secondary'],
+      options: ['primary', 'secondary', 'tertiary', 'link'],
     },
   },
   component: Button,
@@ -38,6 +41,14 @@ export const FullWidth: Story = {
     children: 'Full Width Primary Button',
     disabled: false,
     fullWidth: true,
+    variant: 'primary',
+  },
+}
+
+export const AsLink: Story = {
+  args: {
+    as: 'a',
+    children: 'Link that looks like a button',
     variant: 'primary',
   },
 }
