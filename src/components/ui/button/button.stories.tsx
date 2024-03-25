@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import { FiLogOut } from 'react-icons/fi'
+
 import { Button } from './'
 
 const meta = {
@@ -27,7 +29,19 @@ export const Primary: Story = {
     variant: 'primary',
   },
 }
-
+export const PrimaryWithIcon: Story = {
+  args: {
+    children: (
+      <>
+        <FiLogOut /> <span>`Primary Button`</span>
+      </>
+    ),
+    disabled: false,
+    variant: 'primary',
+  },
+}
+// children: <Icon />,
+// children: 'Secondary Button',
 export const Secondary: Story = {
   args: {
     children: 'Secondary Button',
