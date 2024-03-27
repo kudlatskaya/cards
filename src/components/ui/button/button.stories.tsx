@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { FiLogOut } from 'react-icons/fi'
 
+import s from './button.module.scss'
+
 import { Button } from './'
 
 const meta = {
@@ -11,7 +13,7 @@ const meta = {
     },
     variant: {
       control: { type: 'radio' },
-      options: ['primary', 'secondary', 'tertiary', 'link'],
+      options: ['primary', 'secondary', 'link'],
     },
   },
   component: Button,
@@ -33,7 +35,7 @@ export const PrimaryWithIcon: Story = {
   args: {
     children: (
       <>
-        <FiLogOut /> <span>`Primary Button`</span>
+        <FiLogOut className={s.icon} /> Primary Button
       </>
     ),
     disabled: false,
@@ -42,6 +44,18 @@ export const PrimaryWithIcon: Story = {
 }
 // children: <Icon />,
 // children: 'Secondary Button',
+export const SecondaryWithIcon: Story = {
+  args: {
+    children: (
+      <>
+        <FiLogOut className={s.icon} /> Button
+      </>
+    ),
+    disabled: false,
+    variant: 'secondary',
+  },
+}
+
 export const Secondary: Story = {
   args: {
     children: 'Secondary Button',
@@ -50,14 +64,14 @@ export const Secondary: Story = {
   },
 }
 
-export const FullWidth: Story = {
-  args: {
-    children: 'Full Width Primary Button',
-    disabled: false,
-    fullWidth: true,
-    variant: 'primary',
-  },
-}
+// export const FullWidth: Story = {
+//   args: {
+//     children: 'Full Width Primary Button',
+//     disabled: false,
+//     fullWidth: true,
+//     variant: 'primary',
+//   },
+// }
 
 export const AsLink: Story = {
   args: {
