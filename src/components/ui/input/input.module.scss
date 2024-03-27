@@ -1,0 +1,78 @@
+.label {
+  font-family: inherit;
+  color: var(--color-dark-100);
+  font-size: var(--font-size-s);
+
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-m);
+
+  display: flex;
+  flex-direction: column;
+
+  &.input {
+    all: unset;
+
+    cursor: auto;
+
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: solid 1px var(--color-dark-300);
+
+    font-size: var(--font-size-m);
+
+    border-radius: 2px;
+    background: none;
+    //outline-offset: 0;
+    //outline: 0;
+  }
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.primary {
+  background-color: var(--color-accent-500);
+
+  &:hover {
+    background-color: var(--color-accent-300);
+  }
+
+  &:active {
+    background-color: var(--color-accent-700);
+  }
+
+  &:focus {
+    background-color: var(--color-accent-500);
+  }
+
+  &.disabled {
+    background-color: var(--color-accent-900);
+  }
+}
+
+.secondary {
+  background-color: var(--color-dark-300);
+
+  &:hover {
+    background-color: var(--color-dark-100);
+  }
+
+  &:active {
+    background-color: var(--color-dark-500);
+  }
+
+  &:focus {
+    background-color: var(--color-dark-300);
+  }
+
+  &.disabled {
+    background-color: var(--color-dark-300);
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
