@@ -22,56 +22,16 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    children: 'Primary Button',
     disabled: false,
+    label: 'Input',
     variant: 'default',
   },
 }
-// export const PrimaryWithIcon: Story = {
-//   args: {
-//     children: (
-//       <>
-//         <FiLogOut className={s.icon} /> Primary Button
-//       </>
-//     ),
-//     disabled: false,
-//     variant: 'primary',
-//   },
-// }
 
-// export const SecondaryWithIcon: Story = {
-//   args: {
-//     children: (
-//       <>
-//         <FiLogOut className={s.icon} /> Button
-//       </>
-//     ),
-//     disabled: false,
-//     variant: 'secondary',
-//   },
-// }
-//
-// export const Secondary: Story = {
-//   args: {
-//     children: 'Secondary Button',
-//     disabled: false,
-//     variant: 'secondary',
-//   },
-// }
-
-// export const FullWidth: Story = {
-//   args: {
-//     children: 'Full Width Primary Button',
-//     disabled: false,
-//     fullWidth: true,
-//     variant: 'primary',
-//   },
-// }
-
-// export const AsLink: Story = {
-//   args: {
-//     as: 'a',
-//     children: 'Link that looks like a button',
-//     variant: 'primary',
-//   },
-// }
+export const Password: Story = {
+  args: {
+    disabled: false,
+    label: 'Input',
+    variant: 'password',
+  },
+}

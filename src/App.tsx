@@ -3,6 +3,7 @@ import { Input } from '@/components/ui/input/input'
 import { FiLogOut } from 'react-icons/fi'
 
 import s from './components/ui/button/button.module.scss'
+import is from './components/ui/input/input.module.scss'
 
 export function App() {
   return (
@@ -20,7 +21,9 @@ export function App() {
       </div>
 
       <div>
-        <Input disabled={false} fullWidth={false} label={'Input'} variant={'default'} />
+        <Input disabled fullWidth={false} label={'Input'} variant={'default'} />
+        <Input disabled={false} fullWidth={false} label={'Input'} variant={'password'} />
+        <input className={`${is.eye}`} />
       </div>
     </div>
   )
