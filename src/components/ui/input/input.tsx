@@ -27,9 +27,9 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
     <label className={`${s.label} ${disabled ? s.disabled : ''}`}>
       {label}
       <Component
-        className={`${s.input} ${disabled || s[variant]} ${fullWidth ? s.fullWidth : ''} ${
-          disabled ? s.disabled : ''
-        } ${className}`}
+        className={`${s.input} ${disabled || s[variant]} ${
+          fullWidth ? s.fullWidth : ''
+        } ${className} ${variant === 'password' && s.icon}`}
         disabled={disabled}
         placeholder={'Input'}
         {...rest}
