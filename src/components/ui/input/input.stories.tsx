@@ -35,3 +35,11 @@ export const Password: Story = {
     variant: 'password',
   },
 }
+
+export const Search: Story = {
+  args: {
+    disabled: false,
+    label: 'Search input',
+    variant: 'search',
+  },
+}

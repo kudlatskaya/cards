@@ -23,13 +23,19 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
     ...rest
   } = props
 
+  const icon = variant === 'password'
+      ? s.iconPassword
+      : variant === 'search'
+          ? s.iconSearch
+          : ''
+
   return (
     <label className={`${s.label} ${disabled ? s.disabled : ''}`}>
       {label}
       <Component
         className={`${s.input} ${disabled || s[variant]} ${
           fullWidth ? s.fullWidth : ''
-        } ${className} ${variant === 'password' && s.icon}`}
+        } ${className} ${icon}`}
         disabled={disabled}
         placeholder={'Input'}
         {...rest}
