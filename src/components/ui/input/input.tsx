@@ -28,7 +28,7 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
       : variant === 'search'
           ? s.iconSearch
           : ''
-  console.log(icon)
+
   return (
     <label className={`${s.label} ${disabled ? s.disabled : ''}`}>
       {label}
