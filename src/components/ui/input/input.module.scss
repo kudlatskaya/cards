@@ -22,19 +22,16 @@
     border-radius: 2px;
     background: none;
 
-    &.password {
       &.iconPassword {
         background: url('../../../assets/eye_icon_white.svg') no-repeat 96%;
         background-size: 20px 20px;
       }
-    }
 
-    &.search {
       &.iconSearch {
-        background: url('../../../assets/searcher_icon_dark100.svg') no-repeat 96%;
+        background: url('../../../assets/searcher_icon_dark100.svg') no-repeat 4%;
         background-size: 20px 20px;
+        padding-left: 41px;
       }
-    }
   }
 }
 
@@ -45,19 +42,16 @@
   .input {
     border-color: var(--color-dark-300);
 
-    &.password {
       &.iconPassword {
         background: url('../../../assets/eye_icon_dark.svg') no-repeat 96%;
         background-size: 20px 20px;
       }
-    }
 
-    &.search {
       &.iconSearch {
-        background: url('../../../assets/searcher_icon_dark300.svg') no-repeat 96%;
+        background: url('../../../assets/searcher_icon_dark300.svg') no-repeat 4%;
         background-size: 20px 20px;
+        padding-left: 41px;
       }
-    }
 
     &::placeholder {
       color: var(--color-dark-300);
