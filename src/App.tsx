@@ -24,9 +24,10 @@ export function App() {
         <Input disabled={false} fullWidth={false} label={'Default input'} variant={'default'} />
         <Input disabled={false} fullWidth={false} label={'Password input'} variant={'password'} />
         <Input disabled fullWidth={false} label={'Password input'} variant={'password'} />
-        <Input fullWidth={false} label={'Password input'} variant={'search'} />
-        <Input disabled fullWidth={false} label={'Password input'} variant={'search'} />
-
+        <Input fullWidth={false} label={'Search input'} variant={'search'} />
+        <Input disabled fullWidth={false} label={'Search input'} variant={'search'} />
+        <Input fullWidth={false} label={'Search input'} variant={'search'} errorMessage={'Error'}/>
+        <Input disabled fullWidth={true} label={'Search input'} variant={'search'} />
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ import s from './input.module.scss'
 export type InputProps<T extends ElementType = 'input'> = {
   as?: T
   disabled?: boolean
-  error?: string
+  errorMessage?: string
   fullWidth?: boolean
   label?: string
   variant?: 'default' | 'password' | 'search'
@@ -16,7 +16,7 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
     as: Component = 'input',
     className,
     disabled,
-    error,
+    errorMessage,
     fullWidth,
     label,
     variant = 'default',
@@ -33,14 +33,17 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
     <label className={`${s.label} ${disabled ? s.disabled : ''}`}>
       {label}
       <Component
-        className={`${s.input} ${disabled || s[variant]} ${
-          fullWidth ? s.fullWidth : ''
-        } ${className} ${icon}`}
+        className={` ${s.input} 
+                     ${disabled || s[variant]} 
+                     ${fullWidth && s.fullWidth } 
+                     ${className} 
+                     ${icon} 
+                     ${errorMessage && s.error}`}
         disabled={disabled}
         placeholder={'Input'}
         {...rest}
       />
-      <span className={s.error}>{error}</span>
+      {errorMessage && <span className={s.errorMessage}>{errorMessage}</span>}
     </label>
   )
 }
