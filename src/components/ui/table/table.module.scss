@@ -1,20 +1,23 @@
 .table {
-  display: grid;
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 2.5fr repeat(3, 1fr) 2fr 1.5fr;
-  grid-template-areas: "head"
-                       "body";
+  //display: flex;
+  //flex-direction: column;
 
   .head {
-    grid-area: head;
+    //display: flex;
     background-color: green;
   }
 
-  .body {
-    grid-area: body;
-    background-color: #2f68cc;
+
+
+    .row {
+      //display: flex;
+    }
+
+}
+
+@media (max-width: 760px) {
+  .table {
+    display: flex;
+    flex-direction: column;
   }
 }
