@@ -7,16 +7,13 @@
     background-color: green;
   }
 
-
-
     .row {
       //display: flex;
     }
-
 }
 
 @media (max-width: 760px) {
-  .table {
+  .row {
     display: flex;
     flex-direction: column;
   }

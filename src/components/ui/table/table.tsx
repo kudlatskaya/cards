@@ -37,7 +37,7 @@ export const Table = (props: Props) => {
             {/*        data.heads.map(head => <div>{head}</div>)*/}
             {/*    }*/}
             {/*</div>*/}
-            <tr className={s.head}>
+            <tr className={`${s.head} ${s.row} `}>
                 {
                     data.heads.map(head => <th>{head}</th>)
                 }
