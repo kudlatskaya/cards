@@ -21,7 +21,7 @@ export type TypographyProps<T extends ElementType = 'h1'> = {
 		| 'Subtitle2'
 } & ComponentPropsWithoutRef<T>
 
-const Typography = <T extends ElementType = 'h1'>(props: TypographyProps<T>) => {
+export const Typography = <T extends ElementType = 'h1'>(props: TypographyProps<T>) => {
 	const { as: Component = 'h1', className, color, text, variant = 'h1', ...rest } = props
 
 	return (
@@ -30,5 +30,3 @@ const Typography = <T extends ElementType = 'h1'>(props: TypographyProps<T>) => 
 		</Component>
 	)
 }
-
-export default Typography

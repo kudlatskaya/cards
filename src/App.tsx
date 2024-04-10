@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card/card'
 import { Input } from '@/components/ui/input/input'
 import { Table } from '@/components/ui/table'
-import { Typography } from '@/components/ui/typography'
+import { Typography } from '@/components/ui/typography/typography'
 import { FiLogOut } from 'react-icons/fi'
 
 import s from './components/ui/button/button.module.scss'
@@ -48,6 +48,7 @@ export function App() {
 		<div>
 			<div>
 				<Typography
+					as={'a'}
 					color={'light'}
 					text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
 					variant={'H1'}
