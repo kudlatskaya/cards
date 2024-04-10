@@ -46,6 +46,7 @@ const val = {
 export function App() {
 	return (
 		<div>
+			<div></div>
 			<div>
 				<Typography
 					as={'a'}
@@ -70,6 +71,7 @@ export function App() {
 			</div>
 
 			<div>
+				<Input as={'textarea'} label={'Default input'} variant={'default'} />
 				<Input disabled fullWidth={false} label={'Default input'} variant={'default'} />
 				<Input disabled={false} fullWidth={false} label={'Default input'} variant={'default'} />
 				<Input disabled={false} fullWidth={false} label={'Password input'} variant={'password'} />
