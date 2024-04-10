@@ -48,8 +48,6 @@ export const Default: Story = {
 	},
 }
 
-// as: 'a',
-
 export const H1_dark: Story = {
 	args: {
 		color: 'dark',
@@ -261,7 +259,7 @@ export const Overline_dark: Story = {
 
 export const Link1_light: Story = {
 	args: {
-		color: 'light',
+		as: 'a',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 		variant: 'Link1',
 	},
@@ -272,7 +270,7 @@ export const Link1_light: Story = {
 
 export const Link1_dark: Story = {
 	args: {
-		color: 'dark',
+		as: 'a',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 		variant: 'Link1',
 	},
@@ -283,7 +281,7 @@ export const Link1_dark: Story = {
 
 export const Link2_light: Story = {
 	args: {
-		color: 'light',
+		as: 'a',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 		variant: 'Link2',
 	},
@@ -294,11 +292,9 @@ export const Link2_light: Story = {
 
 export const Link2_dark: Story = {
 	args: {
-		color: 'dark',
+		as: 'a',
 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
 		variant: 'Link2',
 	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
+	parameters: { backgrounds: { disable: false } },
 }

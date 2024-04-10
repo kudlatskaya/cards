@@ -49,9 +49,9 @@ export function App() {
 			<div>
 				<Typography
 					as={'a'}
-					color={'light'}
+					href={'https://google.com'}
 					text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
-					variant={'H1'}
+					variant={'Link1'}
 				/>
 			</div>
 			<div>
