@@ -1,80 +1,86 @@
 import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card/card'
 import { Input } from '@/components/ui/input/input'
+import { Table } from '@/components/ui/table'
+import { Typography } from '@/components/ui/typography'
 import { FiLogOut } from 'react-icons/fi'
 
 import s from './components/ui/button/button.module.scss'
-import {Card} from "@/components/ui/card/card";
-import {Table} from "@/components/ui/table";
 
 const val = {
-    heads: ['name', 'name', 'name', 'name', 'name', 'name',],
-    values: [{
-        "questionImg": "string",
-        "question": "string",
-        "answer": "string",
-        "deckId": "string",
-        "userId": "string",
-        "grade": 0,
-        "id": "string",
-        "shots": 0,
-        "answerImg": "string",
-        "questionVideo": "string",
-        "answerVideo": "string",
-        "created": "2024-04-08T13:02:38.782Z",
-        "updated": "2024-04-08T13:02:38.782Z"
-    },
-        {
-            "grade": 0,
-            "id": "string",
-            "deckId": "string",
-            "userId": "string",
-            "question": "string",
-            "answer": "string",
-            "shots": 0,
-            "answerImg": "string",
-            "questionImg": "string",
-            "questionVideo": "string",
-            "answerVideo": "string",
-            "created": "2024-04-08T13:02:38.782Z",
-            "updated": "2024-04-08T13:02:38.782Z"
-        }]
+	heads: ['name', 'name', 'name', 'name', 'name', 'name'],
+	values: [
+		{
+			answer: 'string',
+			answerImg: 'string',
+			answerVideo: 'string',
+			created: '2024-04-08T13:02:38.782Z',
+			deckId: 'string',
+			grade: 0,
+			id: 'string',
+			question: 'string',
+			questionImg: 'string',
+			questionVideo: 'string',
+			shots: 0,
+			updated: '2024-04-08T13:02:38.782Z',
+			userId: 'string',
+		},
+		{
+			answer: 'string',
+			answerImg: 'string',
+			answerVideo: 'string',
+			created: '2024-04-08T13:02:38.782Z',
+			deckId: 'string',
+			grade: 0,
+			id: 'string',
+			question: 'string',
+			questionImg: 'string',
+			questionVideo: 'string',
+			shots: 0,
+			updated: '2024-04-08T13:02:38.782Z',
+			userId: 'string',
+		},
+	],
 }
 
-
-
 export function App() {
-  return (
-      <div>
-          <div>
-              <Table data={val}/>
-          </div>
-          {/*<Button as={'div'}>Normal Button</Button>*/}
-          <div>
-              <Button as={'a'} href={'https://google.com'}>
-                  Link that looks a button
-              </Button>
-              <Button disabled={false} fullWidth={false} variant={'primary'}>
-                  <FiLogOut className={s.icon}/>
-                  Primary button
-              </Button>
-              <Button variant={'secondary'}>Secondary button</Button>
-          </div>
+	return (
+		<div>
+			<div>
+				<Typography
+					color={'light'}
+					text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
+					variant={'H1'}
+				/>
+			</div>
+			<div>
+				<Table data={val} />
+			</div>
+			{/*<Button as={'div'}>Normal Button</Button>*/}
+			<div>
+				<Button as={'a'} href={'https://google.com'}>
+					Link that looks a button
+				</Button>
+				<Button disabled={false} fullWidth={false} variant={'primary'}>
+					<FiLogOut className={s.icon} />
+					Primary button
+				</Button>
+				<Button variant={'secondary'}>Secondary button</Button>
+			</div>
 
-          <div>
-              <Input disabled fullWidth={false} label={'Default input'} variant={'default'}/>
-              <Input disabled={false} fullWidth={false} label={'Default input'} variant={'default'}/>
-              <Input disabled={false} fullWidth={false} label={'Password input'} variant={'password'}/>
-              <Input disabled fullWidth={false} label={'Password input'} variant={'password'}/>
-              <Input fullWidth={false} label={'Search input'} variant={'search'}/>
-              <Input disabled fullWidth={false} label={'Search input'} variant={'search'}/>
-              <Input fullWidth={false} label={'Search input'} variant={'search'} errorMessage={'Error'}/>
-              <Input disabled fullWidth={true} label={'Search input'} variant={'search'}/>
-          </div>
-          <div>
-              <Card/>
-          </div>
-
-
-      </div>
-  )
+			<div>
+				<Input disabled fullWidth={false} label={'Default input'} variant={'default'} />
+				<Input disabled={false} fullWidth={false} label={'Default input'} variant={'default'} />
+				<Input disabled={false} fullWidth={false} label={'Password input'} variant={'password'} />
+				<Input disabled fullWidth={false} label={'Password input'} variant={'password'} />
+				<Input fullWidth={false} label={'Search input'} variant={'search'} />
+				<Input disabled fullWidth={false} label={'Search input'} variant={'search'} />
+				<Input errorMessage={'Error'} fullWidth={false} label={'Search input'} variant={'search'} />
+				<Input disabled fullWidth label={'Search input'} variant={'search'} />
+			</div>
+			<div>
+				<Card />
+			</div>
+		</div>
+	)
 }
