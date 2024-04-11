@@ -1,28 +1,23 @@
 import * as Checkbox from '@radix-ui/react-checkbox'
-import { CheckIcon, DividerHorizontalIcon } from '@radix-ui/react-icons'
+import { CheckIcon } from '@radix-ui/react-icons'
 
-export default () => {
-	const [checked, setChecked] = React.useState('indeterminate')
+import s from './checkbox.module.scss'
 
-	return (
-		<>
-			<StyledCheckbox checked={checked} onCheckedChange={setChecked}>
-				<Checkbox.Indicator>
-					{checked === 'indeterminate' && <DividerHorizontalIcon />}
-					{checked === true && <CheckIcon />}
-				</Checkbox.Indicator>
-			</StyledCheckbox>
-
-			<button
-				onClick={() =>
-					setChecked((prevIsChecked) =>
-						prevIsChecked === 'indeterminate' ? false : 'indeterminate'
-					)
-				}
-				type={'button'}
-			>
-				Toggle indeterminate
-			</button>
-		</>
-	)
+export type Props = {
+	text?: string
 }
+
+export const CheckboxComponent = ({ text }: Props) => (
+	<form>
+		<div style={{ alignItems: 'center', display: 'flex', gap: '11px' }}>
+			<Checkbox.Root className={`${s.checkbox}`} defaultChecked id={'c1'}>
+				<Checkbox.Indicator className={`${s.checkboxIndicator}`}>
+					<CheckIcon />
+				</Checkbox.Indicator>
+			</Checkbox.Root>
+			<label className={'Label'} htmlFor={'c1'}>
+				{text}
+			</label>
+		</div>
+	</form>
+)

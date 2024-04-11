@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card/card'
+import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
 import { Input } from '@/components/ui/input/input'
 import { Table } from '@/components/ui/table'
 import { Typography } from '@/components/ui/typography/typography'
@@ -46,7 +47,9 @@ const val = {
 export function App() {
 	return (
 		<div>
-			<div></div>
+			<div>
+				<CheckboxComponent text={'Checkbox'} />
+			</div>
 			<div>
 				<Typography
 					as={'a'}
