@@ -15,7 +15,7 @@ button {
   padding-inline-start: 0;
   padding-block-end: 0;
   padding-block-start: 0;
-  //box-shadow: 0 2px 10px var(--color-dark-700);
+
 
 
   &[data-state="checked"] {
@@ -28,37 +28,45 @@ button {
     display: flex;
   }
 
-  //[data-state='unchecked'] {
-  //  background-color: transparent;
-  //}
+  &[data-state="checked"]:hover:before {
+    background-color: var(--color-dark-500);
+  }
 
-  //&:hover {
-  //  background-color: var(--color-info-700);
-  //}
-  //&:active {
-  //  background-color: var(--color-light-100);
-  //}
-  //&:focus {
-  //  background-color: var(--color-light-100);
-  //}
+  &:hover:before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    width: 18px;
+    height: 18px;
+    border: 18px solid var(--color-dark-500);
+    border-radius: 18px;
+  }
 
+  &[data-state="checked"]:active:before,
+  &[data-state="checked"]:focus:before {
+    background-color: var(--color-dark-100);
+  }
 
-
-
-
+  &:active:before,
+  &:focus:before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    width: 18px;
+    height: 18px;
+    border: 18px solid var(--color-dark-100);
+    border-radius: 18px;
+  }
 
 }
 
+.disabled {
+  background-color: var(--color-dark-100);
 
-//.checkbox:hover {
-//  background-color: var(--color-info-700);
-//}
-//.checkbox:focus {
-//  box-shadow: 0 0 0 2px black;
-//}
-//
-
-
+  .checkboxIndicator {
+    color: var(--color-dark-900);
+  }
+}
 
 .Label {
   color: white;
