@@ -16,8 +16,6 @@ button {
   padding-block-end: 0;
   padding-block-start: 0;
 
-
-
   &[data-state="checked"] {
     background-color: var(--color-light-100);
     border-color: var(--color-light-100);
@@ -58,13 +56,29 @@ button {
     border-radius: 18px;
   }
 
-}
+  &:disabled {
+    background-color: var(--color-dark-100);
+    border-color: var(--color-dark-100);
 
-.disabled {
-  background-color: var(--color-dark-100);
+    &[data-state="unchecked"] {
+      background-color: transparent;
+      border-color: var(--color-dark-100);
+    }
 
-  .checkboxIndicator {
-    color: var(--color-dark-900);
+    .checkboxIndicator {
+      color: var(--color-light-700);
+    }
+
+    &:hover:before,
+    &:active:before,
+    &:focus:before,
+    &[data-state="checked"]:hover:before,
+    &[data-state="checked"]:active:before,
+    &[data-state="checked"]:focus:before {
+      border: none;
+      width: 0;
+      height: 0;
+    }
   }
 }
 

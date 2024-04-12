@@ -48,7 +48,7 @@ export function App() {
 	return (
 		<div>
 			<div>
-				<CheckboxComponent text={'Checkbox'} />
+				<CheckboxComponent disabled text={'Checkbox'} />
 			</div>
 			<div>
 				<Typography

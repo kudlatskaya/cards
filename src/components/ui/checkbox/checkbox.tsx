@@ -11,12 +11,7 @@ export type Props = {
 export const CheckboxComponent = ({ disabled, text }: Props) => (
 	<form>
 		<div style={{ alignItems: 'center', display: 'flex', gap: '11px' }}>
-			<Checkbox.Root
-				className={`${s.checkbox} ${disabled && s.disabled}`}
-				defaultChecked
-				disabled={disabled}
-				id={'c1'}
-			>
+			<Checkbox.Root className={s.checkbox} defaultChecked disabled={disabled} id={'c1'}>
 				<Checkbox.Indicator className={`${s.checkboxIndicator}`}>
 					<CheckIcon />
 				</Checkbox.Indicator>

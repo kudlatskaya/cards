@@ -7,10 +7,6 @@ const meta = {
 		text: {
 			control: { type: 'text' },
 		},
-		// disabled: {
-		// 	control: { type: 'radio' },
-		// 	options: ['primary', 'secondary', 'link'],
-		// },
 	},
 	component: CheckboxComponent,
 	tags: ['autodocs'],
