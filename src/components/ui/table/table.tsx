@@ -1,47 +1,48 @@
-import s from './table.module.scss'
+import { ComponentProps, FC } from 'react'
 
-type Data = {
-	heads: string[]
-	values: Value[]
+// import s from './table.module.scss'
+
+export type RootProps = ComponentProps<'table'>
+
+export const Root: FC<RootProps> = (props) => {
+	return <table {...props} />
 }
 
-type Value = {
-	answer: string
-	answerImg: string
-	answerVideo: string
-	created: string
-	deckId: string
-	grade: number
-	id: string
-	question: string
-	questionImg: string
-	questionVideo: string
-	shots: number
-	updated: string
-	userId: string
+export type HeadProps = ComponentProps<'thead'>
+
+export const Head: FC<HeadProps> = (props) => {
+	return <thead {...props} />
 }
 
-export type Props = {
-	data: Data
+export type ThProps = ComponentProps<'th'>
+
+export const Th: FC<ThProps> = (props) => {
+	return <th {...props} />
 }
 
-export const Table = (props: Props) => {
-	const { data } = props
+export type BodyProps = ComponentProps<'tbody'>
 
-	return (
-		<table className={s.table}>
-			<tr className={`${s.head} ${s.row} `}>
-				{data.heads.map((head) => (
-					<th>{head}</th>
-				))}
-			</tr>
-			{data.values.map((value) => (
-				<tr className={s.row}>
-					{Object.values(value).map((item) => (
-						<td> {item}</td>
-					))}
-				</tr>
-			))}
-		</table>
-	)
+export const Body: FC<BodyProps> = (props) => {
+	return <tbody {...props} />
+}
+
+export type TrProps = ComponentProps<'tr'>
+
+export const Tr: FC<TrProps> = (props) => {
+	return <tr {...props} />
+}
+
+export type TdProps = ComponentProps<'td'>
+
+export const Td: FC<TdProps> = (props) => {
+	return <td {...props} />
+}
+
+export const Table = {
+	Body,
+	Head,
+	Root,
+	Td,
+	Th,
+	Tr,
 }

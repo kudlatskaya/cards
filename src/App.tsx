@@ -8,45 +8,51 @@ import { FiLogOut } from 'react-icons/fi'
 
 import s from './components/ui/button/button.module.scss'
 
-const val = {
-	heads: ['name', 'name', 'name', 'name', 'name', 'name'],
-	values: [
-		{
-			answer: 'string',
-			answerImg: 'string',
-			answerVideo: 'string',
-			created: '2024-04-08T13:02:38.782Z',
-			deckId: 'string',
-			grade: 0,
-			id: 'string',
-			question: 'string',
-			questionImg: 'string',
-			questionVideo: 'string',
-			shots: 0,
-			updated: '2024-04-08T13:02:38.782Z',
-			userId: 'string',
-		},
-		{
-			answer: 'string',
-			answerImg: 'string',
-			answerVideo: 'string',
-			created: '2024-04-08T13:02:38.782Z',
-			deckId: 'string',
-			grade: 0,
-			id: 'string',
-			question: 'string',
-			questionImg: 'string',
-			questionVideo: 'string',
-			shots: 0,
-			updated: '2024-04-08T13:02:38.782Z',
-			userId: 'string',
-		},
-	],
-}
+// const val = {
+// 	heads: ['name', 'name', 'name', 'name', 'name', 'name'],
+// 	values: [
+// 		{
+// 			answer: 'string',
+// 			answerImg: 'string',
+// 			answerVideo: 'string',
+// 			created: '2024-04-08T13:02:38.782Z',
+// 			deckId: 'string',
+// 			grade: 0,
+// 			id: 'string',
+// 			question: 'string',
+// 			questionImg: 'string',
+// 			questionVideo: 'string',
+// 			shots: 0,
+// 			updated: '2024-04-08T13:02:38.782Z',
+// 			userId: 'string',
+// 		},
+// 		{
+// 			answer: 'string',
+// 			answerImg: 'string',
+// 			answerVideo: 'string',
+// 			created: '2024-04-08T13:02:38.782Z',
+// 			deckId: 'string',
+// 			grade: 0,
+// 			id: 'string',
+// 			question: 'string',
+// 			questionImg: 'string',
+// 			questionVideo: 'string',
+// 			shots: 0,
+// 			updated: '2024-04-08T13:02:38.782Z',
+// 			userId: 'string',
+// 		},
+// 	],
+// }
 
 export function App() {
+	// @ts-ignore
 	return (
 		<div>
+			<div>
+				{/*<Table data={val} />*/}
+				<Table>{'hello'}</Table>
+			</div>
+
 			<div>
 				<CheckboxComponent disabled text={'Checkbox'} />
 			</div>
@@ -58,9 +64,7 @@ export function App() {
 					variant={'Link1'}
 				/>
 			</div>
-			<div>
-				<Table data={val} />
-			</div>
+
 			{/*<Button as={'div'}>Normal Button</Button>*/}
 			<div>
 				<Button as={'a'} href={'https://google.com'}>
