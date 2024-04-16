@@ -24,14 +24,14 @@
     background: none;
 
       &.iconPassword {
-        background-image: url('../../../assets/icons/eye_icon_white.svg');
+        background-image: url('../../../assets/icons/input/eye_icon_white.svg');
         background-repeat: no-repeat;
         background-position: right;
         background-size: 32px 32px;
       }
 
       &.iconSearch {
-        background-image: url('../../../assets/icons/searcher_icon_dark100.svg');
+        background-image: url('../../../assets/icons/input/searcher_icon_dark100.svg');
         background-repeat: no-repeat;
         background-position: left;
         background-size: 30px 30px;
@@ -40,8 +40,8 @@
 
     &.search {
       &:active {
-        background-image: url('../../../assets/icons/searcher_icon_white.svg'),
-                          url('../../../assets/icons/close_icon_white.svg');
+        background-image: url('../../../assets/icons/input/searcher_icon_white.svg'),
+                          url('../../../assets/icons/input/close_icon_white.svg');
         background-repeat: no-repeat, no-repeat;
         background-position: left, right;
         background-size: 30px 30px, 22px 22px;
@@ -62,12 +62,12 @@
     border-color: var(--color-dark-300);
 
       &.iconPassword {
-        background: url('../../../assets/icons/eye_icon_dark.svg') no-repeat right;
+        background: url('../../../assets/icons/input/eye_icon_dark.svg') no-repeat right;
         background-size: 32px 32px;
       }
 
       &.iconSearch {
-        background: url('../../../assets/icons/searcher_icon_dark300.svg') no-repeat left;
+        background: url('../../../assets/icons/input/searcher_icon_dark300.svg') no-repeat left;
         background-size: 30px 30px;
         padding-left: 41px;
       }

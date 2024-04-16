@@ -26,21 +26,30 @@ export const Default: Story = {
 			<Table.Root>
 				<Table.Head>
 					<Table.Tr>
-						<Table.Th>{'Name1'}</Table.Th>
-						<Table.Th>{'Name2'}</Table.Th>
-						<Table.Th>{'Name3'}</Table.Th>
+						<Table.Th>{'Name'}</Table.Th>
+						<Table.Th>{'Name'}</Table.Th>
+						<Table.Th>{'Name'}</Table.Th>
+						<Table.Th>{'Name'}</Table.Th>
+						<Table.Th>{'Name'}</Table.Th>
+						<Table.Th>{'Name'}</Table.Th>
 					</Table.Tr>
 				</Table.Head>
 				<Table.Body>
 					<Table.Tr>
-						<Table.Td>{'Val1'}</Table.Td>
-						<Table.Td>{'Val2'}</Table.Td>
-						<Table.Td>{'Val3'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
 					</Table.Tr>
 					<Table.Tr>
-						<Table.Td>{'Val1'}</Table.Td>
-						<Table.Td>{'Val2'}</Table.Td>
-						<Table.Td>{'Val3'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
+						<Table.Td>{'Name'}</Table.Td>
 					</Table.Tr>
 				</Table.Body>
 			</Table.Root>
