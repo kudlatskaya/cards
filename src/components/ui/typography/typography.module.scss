@@ -1,83 +1,83 @@
 .light {
-  color: var(--color-light-100)
+	color: var(--color-light-100);
 }
 
 .dark {
-  color: var(--color-dark-900)
+	color: var(--color-dark-900);
 }
 
 .H1 {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xxl);
-  line-height: var(--line-height-l);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-xxl);
+	line-height: var(--line-height-l);
 }
 
 .H2 {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-l);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-xl);
+	line-height: var(--line-height-l);
 }
 
 .H3 {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-l);
-  line-height: var(--line-height-m);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-l);
+	line-height: var(--line-height-m);
 }
 
 .H4 {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-m);
-  line-height: var(--line-height-m);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 }
 
 .Body1 {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-m);
-  line-height: var(--line-height-m);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 }
 
 .Subtitle1 {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-m);
-  line-height: var(--line-height-m);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-m);
+	line-height: var(--line-height-m);
 }
 
 .Body2 {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-s);
-  line-height: var(--line-height-m);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-m);
 }
 
 .Subtitle2 {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-s);
-  line-height: var(--line-height-m);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-m);
 }
 
 .Caption {
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-xs);
-  line-height: var(--line-height-s);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-xs);
+	line-height: var(--line-height-s);
 }
 
 .Overline {
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xs);
-  line-height: var(--line-height-s);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-xs);
+	line-height: var(--line-height-s);
 }
 
 .Link1 {
-  color: var(--color-info-500);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-s);
-  line-height: var(--line-height-m);
+	color: var(--color-info-500);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-s);
+	line-height: var(--line-height-m);
 }
 
 .Link2 {
-  color: var(--color-info-500);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-xs);
-  line-height: var(--line-height-s);
+	color: var(--color-info-500);
+	font-weight: var(--font-weight-regular);
+	font-size: var(--font-size-xs);
+	line-height: var(--line-height-s);
 }
 
 a,
@@ -85,7 +85,7 @@ a:hover,
 a:visited,
 a:active,
 a:focus {
-  cursor: pointer;
-  color: var(--color-info-500);
-  text-decoration: underline;
+	cursor: pointer;
+	color: var(--color-info-500);
+	text-decoration: underline;
 }

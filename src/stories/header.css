@@ -1,37 +1,37 @@
 .storybook-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-  padding: 15px 20px;
+	padding: 15px 20px;
 
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-  border-bottom: 1px solid rgb(0 0 0 / 10%);
+	border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
 
 .storybook-header svg {
-  display: inline-block;
-  vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .storybook-header h1 {
-  display: inline-block;
+	display: inline-block;
 
-  margin: 6px 0 6px 10px;
+	margin: 6px 0 6px 10px;
 
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1;
-  vertical-align: top;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1;
+	vertical-align: top;
 }
 
 .storybook-header button + button {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
 .storybook-header .welcome {
-  margin-right: 10px;
-  font-size: 14px;
-  color: #333;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #333;
 }

@@ -1,90 +1,89 @@
-
 button {
-  all: unset;
+	all: unset;
 }
 
 .checkbox {
-  width: 12px;
-  height: 12px;
-  border: solid 3px var(--color-light-900);
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-inline-end: 0;
-  padding-inline-start: 0;
-  padding-block-end: 0;
-  padding-block-start: 0;
+	width: 12px;
+	height: 12px;
+	border: solid 3px var(--color-light-900);
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-inline-end: 0;
+	padding-inline-start: 0;
+	padding-block-end: 0;
+	padding-block-start: 0;
 
-  &[data-state="checked"] {
-    background-color: var(--color-light-100);
-    border-color: var(--color-light-100);
-  }
+	&[data-state='checked'] {
+		background-color: var(--color-light-100);
+		border-color: var(--color-light-100);
+	}
 
-  .checkboxIndicator {
-    color: var(--color-dark-900);
-    display: flex;
-  }
+	.checkboxIndicator {
+		color: var(--color-dark-900);
+		display: flex;
+	}
 
-  &[data-state="checked"]:hover:before {
-    background-color: var(--color-dark-500);
-  }
+	&[data-state='checked']:hover:before {
+		background-color: var(--color-dark-500);
+	}
 
-  &:hover:before {
-    content:'';
-    position: absolute;
-    z-index: -1;
-    width: 18px;
-    height: 18px;
-    border: 18px solid var(--color-dark-500);
-    border-radius: 18px;
-  }
+	&:hover:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 18px;
+		height: 18px;
+		border: 18px solid var(--color-dark-500);
+		border-radius: 18px;
+	}
 
-  &[data-state="checked"]:active:before,
-  &[data-state="checked"]:focus:before {
-    background-color: var(--color-dark-100);
-  }
+	&[data-state='checked']:active:before,
+	&[data-state='checked']:focus:before {
+		background-color: var(--color-dark-100);
+	}
 
-  &:active:before,
-  &:focus:before {
-    content:'';
-    position: absolute;
-    z-index: -1;
-    width: 18px;
-    height: 18px;
-    border: 18px solid var(--color-dark-100);
-    border-radius: 18px;
-  }
+	&:active:before,
+	&:focus:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 18px;
+		height: 18px;
+		border: 18px solid var(--color-dark-100);
+		border-radius: 18px;
+	}
 
-  &:disabled {
-    background-color: var(--color-dark-100);
-    border-color: var(--color-dark-100);
+	&:disabled {
+		background-color: var(--color-dark-100);
+		border-color: var(--color-dark-100);
 
-    &[data-state="unchecked"] {
-      background-color: transparent;
-      border-color: var(--color-dark-100);
-    }
+		&[data-state='unchecked'] {
+			background-color: transparent;
+			border-color: var(--color-dark-100);
+		}
 
-    .checkboxIndicator {
-      color: var(--color-light-700);
-    }
+		.checkboxIndicator {
+			color: var(--color-light-700);
+		}
 
-    &:hover:before,
-    &:active:before,
-    &:focus:before,
-    &[data-state="checked"]:hover:before,
-    &[data-state="checked"]:active:before,
-    &[data-state="checked"]:focus:before {
-      border: none;
-      width: 0;
-      height: 0;
-    }
-  }
+		&:hover:before,
+		&:active:before,
+		&:focus:before,
+		&[data-state='checked']:hover:before,
+		&[data-state='checked']:active:before,
+		&[data-state='checked']:focus:before {
+			border: none;
+			width: 0;
+			height: 0;
+		}
+	}
 }
 
 .Label {
-  color: white;
-  padding-left: 15px;
-  font-size: 15px;
-  line-height: 1;
+	color: white;
+	padding-left: 15px;
+	font-size: 15px;
+	line-height: 1;
 }
