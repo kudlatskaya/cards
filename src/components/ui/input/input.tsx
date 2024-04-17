@@ -1,4 +1,4 @@
-import { ComponentPropsWithoutRef, ElementType } from 'react'
+import { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react'
 
 import s from './input.module.scss'
 
@@ -7,6 +7,8 @@ export type InputProps<T extends ElementType = 'input'> = {
 	disabled?: boolean
 	errorMessage?: string
 	fullWidth?: boolean
+	iconEnd?: ReactNode
+	iconStart?: ReactNode
 	label?: string
 	variant?: 'default' | 'password' | 'search'
 } & ComponentPropsWithoutRef<T>
@@ -18,6 +20,8 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 		disabled,
 		errorMessage,
 		fullWidth,
+		iconEnd,
+		iconStart,
 		label,
 		variant = 'default',
 		...rest
@@ -28,6 +32,7 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 	return (
 		<label className={`${s.label} ${disabled ? s.disabled : ''}`}>
 			{label}
+			{iconStart}
 			<Component
 				className={` ${s.input} 
                      ${disabled || s[variant]} 
@@ -39,6 +44,7 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 				placeholder={'Input'}
 				{...rest}
 			/>
+			{iconEnd}
 			{errorMessage && <span className={s.errorMessage}>{errorMessage}</span>}
 		</label>
 	)

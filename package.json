@@ -13,7 +13,7 @@
     "build-storybook": "storybook build",
     "rename-icons": "node scripts/rename_icons.cjs",
     "replace-colors": "node scripts/replace_colors.cjs",
-    "generate-icons": "pnpm run rename-icons && npx @svgr/cli --out-dir src/assets/icons/components --jsx-runtime automatic --typescript --ref --memo -- src/assets/icons/svg && pnpm run replace-colors && pnpm run format && pnpm run lint",
+    "generate-icons": "pnpm run rename-icons && npx @svgr/cli --out-dir src/assets/icons/components --jsx-runtime automatic --typescript --ref --memo -- src/assets/icons/svg && pnpm run replace-colors && pnpm run format && pnpm run lint"
   },
   "dependencies": {
     "-": "^0.0.1",

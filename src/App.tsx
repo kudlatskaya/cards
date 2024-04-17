@@ -1,12 +1,12 @@
+import EyeOutline from '@/assets/icons/components/eyeoutline'
+import LogOutOutline from '@/assets/icons/components/logoutoutline'
+import SearchOutline from '@/assets/icons/components/searchoutline'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card/card'
 import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
 import { Input } from '@/components/ui/input/input'
 import { Table } from '@/components/ui/table'
 import { Typography } from '@/components/ui/typography/typography'
-import { FiLogOut } from 'react-icons/fi'
-
-import s from './components/ui/button/button.module.scss'
 
 // const val = {
 // 	heads: ['name', 'name', 'name', 'name', 'name', 'name'],
@@ -49,6 +49,43 @@ export function App() {
 	return (
 		<div>
 			<div>
+				{/*<Button as={'a'} href={'https://google.com'}>*/}
+				{/*	Link that looks a button*/}
+				{/*</Button>*/}
+				<Button disabled={false} fullWidth={false} icon={<LogOutOutline />} variant={'primary'}>
+					Primary button
+				</Button>
+				{/*<Button variant={'secondary'}>Secondary button</Button>*/}
+			</div>
+			<div>
+				<Input
+					fullWidth={false}
+					iconEnd={<SearchOutline color={'red'} />}
+					iconStart={<EyeOutline color={'red'} />}
+					label={'Search input_old'}
+					variant={'search'}
+				/>
+				<Input as={'textarea'} label={'Default input_old'} variant={'default'} />
+				<Input disabled fullWidth={false} label={'Default input_old'} variant={'default'} />
+				<Input disabled={false} fullWidth={false} label={'Default input_old'} variant={'default'} />
+				<Input
+					disabled={false}
+					fullWidth={false}
+					label={'Password input_old'}
+					variant={'password'}
+				/>
+				<Input disabled fullWidth={false} label={'Password input_old'} variant={'password'} />
+
+				<Input disabled fullWidth={false} label={'Search input_old'} variant={'search'} />
+				<Input
+					errorMessage={'Error'}
+					fullWidth={false}
+					label={'Search input_old'}
+					variant={'search'}
+				/>
+				<Input disabled fullWidth label={'Search input_old'} variant={'search'} />
+			</div>
+			<div>
 				<Table.Root>
 					<Table.Head>
 						<Table.Tr>
@@ -85,28 +122,7 @@ export function App() {
 			</div>
 
 			{/*<Button as={'div'}>Normal Button</Button>*/}
-			<div>
-				<Button as={'a'} href={'https://google.com'}>
-					Link that looks a button
-				</Button>
-				<Button disabled={false} fullWidth={false} variant={'primary'}>
-					<FiLogOut className={s.icon} />
-					Primary button
-				</Button>
-				<Button variant={'secondary'}>Secondary button</Button>
-			</div>
 
-			<div>
-				<Input as={'textarea'} label={'Default input'} variant={'default'} />
-				<Input disabled fullWidth={false} label={'Default input'} variant={'default'} />
-				<Input disabled={false} fullWidth={false} label={'Default input'} variant={'default'} />
-				<Input disabled={false} fullWidth={false} label={'Password input'} variant={'password'} />
-				<Input disabled fullWidth={false} label={'Password input'} variant={'password'} />
-				<Input fullWidth={false} label={'Search input'} variant={'search'} />
-				<Input disabled fullWidth={false} label={'Search input'} variant={'search'} />
-				<Input errorMessage={'Error'} fullWidth={false} label={'Search input'} variant={'search'} />
-				<Input disabled fullWidth label={'Search input'} variant={'search'} />
-			</div>
 			<div>
 				<Card />
 			</div>

@@ -68,7 +68,7 @@ export const Default: Story = {
 // export const Search: Story = {
 //     args: {
 //         disabled: false,
-//         label: 'Search input',
+//         label: 'Search input_old',
 //         variant: 'search',
 //     },
 // }
