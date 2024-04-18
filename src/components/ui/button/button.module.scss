@@ -1,75 +1,86 @@
 .button {
-	all: unset;
+  all: unset;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	box-sizing: border-box;
-	padding: 6px 28px;
+  box-sizing: border-box;
+  padding: 6px 28px;
 
-	font-family: inherit;
-	font-size: var(--font-size-s);
-	font-weight: var(--font-weight-bold);
-	line-height: var(--line-height-m);
-	color: inherit;
+  font-family: inherit;
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-m);
+  color: inherit;
 
-	border-radius: 4px;
+  border-radius: 4px;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	&:focus-visible {
-		outline: 2px solid var(--color-info-500);
-	}
+  &:focus-visible {
+    outline: 2px solid var(--color-info-500);
+  }
+
+  .icon {
+    display: flex;
+    margin-right: 10px;
+
+    //&:has(~ .input:focus) {
+    //  color: var(--color-light-100);
+    //}
+    color: var(--color-light-100);
+
+  }
 }
 
-.icon {
-	//display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-right: 10px;
-}
+
 
 .primary {
-	background-color: var(--color-accent-500);
+  background-color: var(--color-accent-500);
 
-	&:hover {
-		background-color: var(--color-accent-300);
-	}
+  &:hover {
+    background-color: var(--color-accent-300);
+  }
 
-	&:active {
-		background-color: var(--color-accent-700);
-	}
+  &:active {
+    background-color: var(--color-accent-700);
+  }
 
-	&:focus {
-		background-color: var(--color-accent-500);
-	}
+  &:focus {
+    background-color: var(--color-accent-500);
+  }
 
-	&.disabled {
-		background-color: var(--color-accent-900);
-	}
+  &.disabled {
+    background-color: var(--color-accent-900);
+    color: var(--color-light-900);
+
+    .icon {
+      color: var(--color-light-900);
+    }
+  }
 }
 
 .secondary {
-	background-color: var(--color-dark-300);
+  background-color: var(--color-dark-300);
 
-	&:hover {
-		background-color: var(--color-dark-100);
-	}
+  &:hover {
+    background-color: var(--color-dark-100);
+  }
 
-	&:active {
-		background-color: var(--color-dark-500);
-	}
+  &:active {
+    background-color: var(--color-dark-500);
+  }
 
-	&:focus {
-		background-color: var(--color-dark-300);
-	}
+  &:focus {
+    background-color: var(--color-dark-300);
+  }
 
-	&.disabled {
-		background-color: var(--color-dark-300);
-	}
+  &.disabled {
+    background-color: var(--color-dark-300);
+  }
 }
 
 .fullWidth {
-	width: 100%;
+  width: 100%;
 }

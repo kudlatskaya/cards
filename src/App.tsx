@@ -1,6 +1,6 @@
-import EyeOutline from '@/assets/icons/components/eyeoutline'
-import LogOutOutline from '@/assets/icons/components/logoutoutline'
-import SearchOutline from '@/assets/icons/components/searchoutline'
+import Eye from '@/assets/icons/components/Eye'
+import Logout from '@/assets/icons/components/Logout'
+import Search from '@/assets/icons/components/Search'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card/card'
 import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
@@ -52,7 +52,7 @@ export function App() {
 				{/*<Button as={'a'} href={'https://google.com'}>*/}
 				{/*	Link that looks a button*/}
 				{/*</Button>*/}
-				<Button disabled={false} fullWidth={false} icon={<LogOutOutline />} variant={'primary'}>
+				<Button disabled={false} fullWidth={false} icon={<Logout />} variant={'primary'}>
 					Primary button
 				</Button>
 				{/*<Button variant={'secondary'}>Secondary button</Button>*/}
@@ -60,8 +60,8 @@ export function App() {
 			<div>
 				<Input
 					fullWidth={false}
-					iconEnd={<SearchOutline color={'red'} />}
-					iconStart={<EyeOutline color={'red'} />}
+					iconEnd={<Search color={'red'} />}
+					iconStart={<Eye color={'red'} />}
 					label={'Search input_old'}
 					variant={'search'}
 				/>
