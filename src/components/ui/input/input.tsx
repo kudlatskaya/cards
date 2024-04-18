@@ -27,24 +27,26 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 		...rest
 	} = props
 
-	const icon = variant === 'password' ? s.iconPassword : variant === 'search' ? s.iconSearch : ''
+	// const paddingsStyle = variant === 'search' ? s.paddings : ''
+	//= variant === 'password' ? s.iconEnd : variant === 'search' ? s.iconStart : ''
 
 	return (
 		<label className={`${s.label} ${disabled ? s.disabled : ''}`}>
 			{label}
-			{iconStart}
-			<Component
-				className={` ${s.input} 
+			<div className={s.inputWrapper}>
+				{iconStart && <span className={s.iconStart}>{iconStart}</span>}
+				<Component
+					className={` ${s.input} 
                      ${disabled || s[variant]} 
                      ${fullWidth && s.fullWidth} 
                      ${className} 
-                     ${icon} 
                      ${errorMessage && s.error}`}
-				disabled={disabled}
-				placeholder={'Input'}
-				{...rest}
-			/>
-			{iconEnd}
+					disabled={disabled}
+					placeholder={'Input'}
+					{...rest}
+				/>
+				{iconEnd && <span className={s.iconEnd}>{iconEnd}</span>}
+			</div>
 			{errorMessage && <span className={s.errorMessage}>{errorMessage}</span>}
 		</label>
 	)

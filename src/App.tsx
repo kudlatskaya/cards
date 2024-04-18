@@ -59,9 +59,10 @@ export function App() {
 			</div>
 			<div>
 				<Input
+					disabled
 					fullWidth={false}
-					iconEnd={<Search color={'red'} />}
-					iconStart={<Eye color={'red'} />}
+					iconEnd={<Eye />}
+					iconStart={<Search />}
 					label={'Search input_old'}
 					variant={'search'}
 				/>
@@ -71,6 +72,7 @@ export function App() {
 				<Input
 					disabled={false}
 					fullWidth={false}
+					iconEnd={<Eye />}
 					label={'Password input_old'}
 					variant={'password'}
 				/>
