@@ -20,12 +20,20 @@
       left: 12px;
       color: var(--color-dark-100);
       margin-right: 10px;
+
+      &:has(~ .input:active) {
+        color: var(--color-light-100);
+      }
     }
 
     .iconEnd {
       display: flex;
       margin-left: -30px;
       color: var(--color-light-100);
+
+      &:has(~ .input:active) {
+        color: var(--color-light-100);
+      }
     }
 
     .input {
@@ -44,16 +52,16 @@
       background: none;
       //color: var(--color-light-100);
 
-      //&:has(~ .input:focus) {
-      //  color: var(--color-light-100);
-      //}
+
+
 
       &.fullWidth {
         width: 100%;
       }
     }
 
-    .search {
+    .search,
+    .search:disabled {
       padding: 6px 36px;
     }
 
@@ -86,6 +94,10 @@
 
     }
   }
+}
+
+.paddings {
+  padding: 6px 36px !important;
 }
 
 

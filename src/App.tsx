@@ -59,7 +59,7 @@ export function App() {
 			</div>
 			<div>
 				<Input
-					disabled
+					disabled={false}
 					fullWidth={false}
 					iconEnd={<Eye />}
 					iconStart={<Search />}
