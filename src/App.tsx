@@ -1,3 +1,4 @@
+import Close from '@/assets/icons/components/Close'
 import Eye from '@/assets/icons/components/Eye'
 import Logout from '@/assets/icons/components/Logout'
 import Search from '@/assets/icons/components/Search'
@@ -58,34 +59,65 @@ export function App() {
 				{/*<Button variant={'secondary'}>Secondary button</Button>*/}
 			</div>
 			<div>
+				<Input as={'textarea'} label={'Default input'} variant={'default'} />
+				<Input disabled fullWidth={false} label={'Default input'} variant={'default'} />
+				<Input disabled={false} fullWidth={false} label={'Default input'} variant={'default'} />
 				<Input
 					disabled={false}
+					errorMessage={'Error'}
 					fullWidth={false}
-					iconEnd={<Eye />}
-					iconStart={<Search />}
-					label={'Search input_old'}
-					variant={'search'}
+					label={'Default input'}
+					variant={'default'}
 				/>
-				<Input as={'textarea'} label={'Default input_old'} variant={'default'} />
-				<Input disabled fullWidth={false} label={'Default input_old'} variant={'default'} />
-				<Input disabled={false} fullWidth={false} label={'Default input_old'} variant={'default'} />
+
 				<Input
 					disabled={false}
 					fullWidth={false}
 					iconEnd={<Eye />}
-					label={'Password input_old'}
+					label={'Password input'}
 					variant={'password'}
 				/>
-				<Input disabled fullWidth={false} label={'Password input_old'} variant={'password'} />
+				<Input
+					disabled
+					fullWidth={false}
+					iconEnd={<Eye />}
+					label={'Password input'}
+					variant={'password'}
+				/>
 
-				<Input disabled fullWidth={false} label={'Search input_old'} variant={'search'} />
+				<Input
+					disabled={false}
+					fullWidth={false}
+					iconEnd={<Close />}
+					iconStart={<Search />}
+					label={'Search input'}
+					variant={'search'}
+				/>
+
+				<Input
+					disabled
+					fullWidth={false}
+					iconEnd={<Close />}
+					iconStart={<Search />}
+					label={'Search input'}
+					variant={'search'}
+				/>
 				<Input
 					errorMessage={'Error'}
 					fullWidth={false}
-					label={'Search input_old'}
+					iconEnd={<Close />}
+					iconStart={<Search />}
+					label={'Search input'}
 					variant={'search'}
 				/>
-				<Input disabled fullWidth label={'Search input_old'} variant={'search'} />
+				<Input
+					disabled
+					fullWidth
+					iconEnd={<Close />}
+					iconStart={<Search />}
+					label={'Search input'}
+					variant={'search'}
+				/>
 			</div>
 			<div>
 				<Table.Root>

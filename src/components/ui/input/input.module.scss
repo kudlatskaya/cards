@@ -52,9 +52,6 @@
       background: none;
       //color: var(--color-light-100);
 
-
-
-
       &.fullWidth {
         width: 100%;
       }
@@ -64,6 +61,17 @@
     .search:disabled {
       padding: 6px 36px;
     }
+
+    .search ~ .iconEnd {
+        visibility: hidden;
+    }
+
+    .search {
+      &:active ~ .iconEnd {
+        visibility: visible;
+      }
+    }
+
 
     .default,
     .password,
@@ -107,16 +115,18 @@
   .input {
     border-color: var(--color-dark-300);
 
-    &.iconEnd {
-      color: var(--color-dark-300);
-    }
-
-    &.iconStart {
-      color: var(--color-dark-300);
-    }
-
     &::placeholder {
       color: var(--color-dark-300);
+    }
+  }
+
+  .inputWrapper {
+     .iconEnd {
+      color: var(--color-dark-300);
+    }
+
+     .iconStart {
+      color: var(--color-dark-300)!important;
     }
   }
 }
