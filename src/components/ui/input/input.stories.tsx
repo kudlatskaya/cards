@@ -1,5 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
+import Close from '@/assets/icons/components/Close'
+import Eye from '@/assets/icons/components/Eye'
+import Search from '@/assets/icons/components/Search'
+
 import { Input } from './input'
 
 const meta = {
@@ -31,15 +35,18 @@ export const Default: Story = {
 export const Password: Story = {
 	args: {
 		disabled: false,
+		iconEnd: <Eye />,
 		label: 'Input',
 		variant: 'password',
 	},
 }
 
-export const Search: Story = {
+export const SearchInput: Story = {
 	args: {
 		disabled: false,
-		label: 'Search input_old',
+		iconEnd: <Close />,
+		iconStart: <Search />,
+		label: 'Search input',
 		variant: 'search',
 	},
 }
