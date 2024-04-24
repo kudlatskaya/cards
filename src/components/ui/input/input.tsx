@@ -28,10 +28,9 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 	} = props
 
 	const paddingsStyle = iconStart ? s.paddings : ''
-	//= variant === 'password' ? s.iconEnd : variant === 'search' ? s.iconStart : ''
 
 	return (
-		<label className={`${s.label} ${disabled ? s.disabled : ''}`}>
+		<label className={`${s.label} ${disabled ? s.disabled : ''} ${fullWidth && s.fullWidth} `}>
 			{label}
 			<div className={s.inputWrapper}>
 				{iconStart && <span className={s.iconStart}>{iconStart}</span>}
@@ -39,7 +38,7 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 					className={` ${s.input} 
 					${paddingsStyle}
                      ${disabled || s[variant]} 
-                     ${fullWidth && s.fullWidth} 
+                     
                      ${className} 
                      ${errorMessage && s.error}`}
 					disabled={disabled}

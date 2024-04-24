@@ -69,10 +69,10 @@ export function App() {
 					label={'Default input'}
 					variant={'default'}
 				/>
-
+				<span>{'ku'}</span>
 				<Input
 					disabled={false}
-					fullWidth={false}
+					fullWidth
 					iconEnd={<Eye />}
 					label={'Password input'}
 					variant={'password'}

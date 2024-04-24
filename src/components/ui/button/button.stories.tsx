@@ -42,8 +42,7 @@ export const PrimaryWithIcon: Story = {
 		variant: 'primary',
 	},
 }
-// children: <Icon />,
-// children: 'Secondary Button',
+
 export const SecondaryWithIcon: Story = {
 	args: {
 		children: (

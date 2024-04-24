@@ -7,19 +7,18 @@
 
   display: flex;
   flex-direction: column;
-
   width: 284px;
 
   .inputWrapper {
     display: flex;
     align-items: center;
 
+
     .iconStart {
       display: flex;
-      position: absolute;
-      left: 12px;
+      position: relative;
+      left: 10px;
       color: var(--color-dark-100);
-      margin-right: 10px;
 
       &:has(~ .input:active) {
         color: var(--color-light-100);
@@ -50,11 +49,8 @@
       font-size: var(--font-size-m);
       border-radius: 2px;
       background: none;
-      //color: var(--color-light-100);
 
-      &.fullWidth {
-        width: 100%;
-      }
+
     }
 
     .search,
@@ -71,7 +67,6 @@
         visibility: visible;
       }
     }
-
 
     .default,
     .password,
@@ -98,16 +93,14 @@
         border-color: var(--color-danger-300);
         color: var(--color-danger-300);
       }
-
-
     }
   }
 }
 
 .paddings {
   padding: 6px 36px !important;
+  margin-left: -20px !important;
 }
-
 
 .disabled {
   color: var(--color-dark-300);
@@ -131,10 +124,21 @@
   }
 }
 
-
 .errorMessage {
   color: var(--color-danger-300);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-m);
+}
+
+.fullWidth {
+  width: 100%;
+
+  & .inputWrapper {
+    width: 100%;
+
+    & .input {
+      width: 100%;
+    }
+  }
 }
