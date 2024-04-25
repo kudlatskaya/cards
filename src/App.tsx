@@ -50,6 +50,46 @@ export function App() {
 	return (
 		<div>
 			<div>
+				<Typography.H1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H1>
+				<Typography.H2 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H2>
+				<Typography.Body1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Body1>
+				<Typography.Body2 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Body2>
+				<Typography.Caption color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Caption>
+				<Typography.H3 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H3>
+				<Typography.H4 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H4>
+				<Typography.Link1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Link1>
+				<p>
+					<Typography.Link2 color={'light'}>
+						{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+					</Typography.Link2>
+				</p>
+				<Typography.Overline color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Overline>
+				<Typography.Subtitle1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Subtitle1>
+				<Typography.Subtitle2 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Subtitle2>
+			</div>
+			<div>
 				{/*<Button as={'a'} href={'https://google.com'}>*/}
 				{/*	Link that looks a button*/}
 				{/*</Button>*/}
@@ -145,14 +185,6 @@ export function App() {
 
 			<div>
 				<CheckboxComponent disabled text={'Checkbox'} />
-			</div>
-			<div>
-				<Typography
-					as={'a'}
-					href={'https://google.com'}
-					text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}
-					variant={'Link1'}
-				/>
 			</div>
 
 			{/*<Button as={'div'}>Normal Button</Button>*/}

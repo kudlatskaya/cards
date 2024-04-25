@@ -11,10 +11,10 @@ const meta = {
 		title: {
 			control: { type: 'text' },
 		},
-		variant: {
-			control: { type: 'radio' },
-			options: ['default', 'password', 'search'],
-		},
+		// variant: {
+		// 	control: { type: 'radio' },
+		// 	options: ['default', 'password', 'search'],
+		// },
 	},
 	component: Input,
 	tags: ['autodocs'],

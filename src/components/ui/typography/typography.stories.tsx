@@ -4,297 +4,150 @@ import { Typography } from './typography'
 
 const meta = {
 	argTypes: {
-		color: {
-			control: { type: 'radio' },
-			options: ['light', 'dark'],
-		},
-		text: {
-			control: { type: 'text' },
-		},
-		variant: {
-			control: { type: 'radio' },
-			options: [
-				'H1',
-				'H2',
-				'H3',
-				'H4',
-				'Body1',
-				'Subtitle1',
-				'Body2',
-				'Subtitle2',
-				'Caption',
-				'Overline',
-				'Link1',
-				'Link2',
+		// color: {
+		// 	control: { type: 'radio' },
+		// 	options: ['light', 'dark'],
+		// },
+		// text: {
+		// 	control: { type: 'text' },
+		// },
+		// variant: {
+		// 	control: { type: 'radio' },
+		// 	options: [
+		// 		'H1',
+		// 		'H2',
+		// 		'H3',
+		// 		'H4',
+		// 		'Body1',
+		// 		'Subtitle1',
+		// 		'Body2',
+		// 		'Subtitle2',
+		// 		'Caption',
+		// 		'Overline',
+		// 		'Link1',
+		// 		'Link2',
+		// 	],
+		// },
+	},
+	component: Typography.H1,
+	parameters: {
+		backgrounds: {
+			default: 'dark',
+			values: [
+				{ name: 'dark', value: '#000' },
+				{ name: 'light', value: '#fff' },
 			],
 		},
 	},
-	component: Typography,
 	tags: ['autodocs'],
 	title: 'Components/Typography',
-} satisfies Meta<typeof Typography>
+} satisfies Meta<typeof Typography.H1>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {
+export const Light: Story = {
 	args: {
+		children: (
+			<>
+				<Typography.H1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H1>
+				<Typography.H2 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H2>
+				<Typography.Body1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Body1>
+				<Typography.Body2 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Body2>
+				<Typography.Caption color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Caption>
+				<Typography.H3 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H3>
+				<Typography.H4 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H4>
+				<Typography.Link1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Link1>
+				<p>
+					<Typography.Link2 color={'light'}>
+						{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+					</Typography.Link2>
+				</p>
+				<Typography.Overline color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Overline>
+				<Typography.Subtitle1 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Subtitle1>
+				<Typography.Subtitle2 color={'light'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Subtitle2>
+			</>
+		),
 		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H1',
 	},
 	parameters: {
-		backgrounds: { disable: true },
+		backgrounds: {
+			default: 'dark',
+		},
 	},
 }
 
-export const H1_dark: Story = {
+export const Dark: Story = {
 	args: {
+		children: (
+			<>
+				<Typography.H1 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H1>
+				<Typography.H2 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H2>
+				<Typography.Body1 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Body1>
+				<Typography.Body2 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Body2>
+				<Typography.Caption color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Caption>
+				<Typography.H3 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H3>
+				<Typography.H4 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.H4>
+				<Typography.Link1 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Link1>
+				<p>
+					<Typography.Link2 color={'dark'}>
+						{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+					</Typography.Link2>
+				</p>
+				<Typography.Overline color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Overline>
+				<Typography.Subtitle1 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Subtitle1>
+				<Typography.Subtitle2 color={'dark'}>
+					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
+				</Typography.Subtitle2>
+			</>
+		),
 		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H1',
 	},
 	parameters: {
-		backgrounds: { disable: false },
+		backgrounds: {
+			default: 'light',
+		},
 	},
-}
-
-export const H2_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H2',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const H2_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H2',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const H3_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H3',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const H4_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H4',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const H4_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H4',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const H3_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'H3',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Body1_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Body1',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Body1_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Body1',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Subtitle1_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Subtitle1',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Subtitle1_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Subtitle1',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Body2_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Body2',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Body2_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Body2',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Subtitle2_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Subtitle2',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Subtitle2_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Subtitle2',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Caption_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Caption',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Caption_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Caption',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Overline_light: Story = {
-	args: {
-		color: 'light',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Overline',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Overline_dark: Story = {
-	args: {
-		color: 'dark',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Overline',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Link1_light: Story = {
-	args: {
-		as: 'a',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Link1',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Link1_dark: Story = {
-	args: {
-		as: 'a',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Link1',
-	},
-	parameters: {
-		backgrounds: { disable: false },
-	},
-}
-
-export const Link2_light: Story = {
-	args: {
-		as: 'a',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Link2',
-	},
-	parameters: {
-		backgrounds: { disable: true },
-	},
-}
-
-export const Link2_dark: Story = {
-	args: {
-		as: 'a',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-		variant: 'Link2',
-	},
-	parameters: { backgrounds: { disable: false } },
 }
