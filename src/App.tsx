@@ -1,7 +1,8 @@
-import Close from '@/assets/icons/components/Close'
-import Eye from '@/assets/icons/components/Eye'
-import Logout from '@/assets/icons/components/Logout'
-import Search from '@/assets/icons/components/Search'
+import SvgClose from '@/assets/icons/components/close'
+import SvgEye from '@/assets/icons/components/eye'
+import SvgLogout from '@/assets/icons/components/logout'
+import SvgSearch from '@/assets/icons/components/search'
+import image from '@/assets/img/image.png'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card/card'
 import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
@@ -9,46 +10,39 @@ import { Input } from '@/components/ui/input/input'
 import { Table } from '@/components/ui/table'
 import { Typography } from '@/components/ui/typography/typography'
 
-// const val = {
-// 	heads: ['name', 'name', 'name', 'name', 'name', 'name'],
-// 	values: [
-// 		{
-// 			answer: 'string',
-// 			answerImg: 'string',
-// 			answerVideo: 'string',
-// 			created: '2024-04-08T13:02:38.782Z',
-// 			deckId: 'string',
-// 			grade: 0,
-// 			id: 'string',
-// 			question: 'string',
-// 			questionImg: 'string',
-// 			questionVideo: 'string',
-// 			shots: 0,
-// 			updated: '2024-04-08T13:02:38.782Z',
-// 			userId: 'string',
-// 		},
-// 		{
-// 			answer: 'string',
-// 			answerImg: 'string',
-// 			answerVideo: 'string',
-// 			created: '2024-04-08T13:02:38.782Z',
-// 			deckId: 'string',
-// 			grade: 0,
-// 			id: 'string',
-// 			question: 'string',
-// 			questionImg: 'string',
-// 			questionVideo: 'string',
-// 			shots: 0,
-// 			updated: '2024-04-08T13:02:38.782Z',
-// 			userId: 'string',
-// 		},
-// 	],
-// }
-
 export function App() {
 	// @ts-ignore
 	return (
 		<div>
+			<div>
+				<Table.Root>
+					<Table.Head>
+						<Table.Tr>
+							<Table.Th>{'Name1'}</Table.Th>
+							<Table.Th>{'Name2'}</Table.Th>
+							<Table.Th>{'Name3'}</Table.Th>
+						</Table.Tr>
+					</Table.Head>
+					<Table.Body>
+						<Table.Tr>
+							<Table.Td>
+								<div>
+									<img src={image} />
+									{`Name`}
+								</div>
+							</Table.Td>
+							<Table.Td>{'Name'}</Table.Td>
+							<Table.Td>{'Name'}</Table.Td>
+						</Table.Tr>
+						<Table.Tr>
+							<Table.Td>{'Name'}</Table.Td>
+							<Table.Td>{'Name'}</Table.Td>
+							<Table.Td>{'Name'}</Table.Td>
+						</Table.Tr>
+					</Table.Body>
+				</Table.Root>
+			</div>
+
 			<div>
 				<Typography.H1 color={'light'}>
 					{'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}{' '}
@@ -93,7 +87,7 @@ export function App() {
 				{/*<Button as={'a'} href={'https://google.com'}>*/}
 				{/*	Link that looks a button*/}
 				{/*</Button>*/}
-				<Button disabled={false} fullWidth={false} icon={<Logout />} variant={'primary'}>
+				<Button disabled={false} fullWidth={false} icon={<SvgLogout />} variant={'primary'}>
 					Primary button
 				</Button>
 				{/*<Button variant={'secondary'}>Secondary button</Button>*/}
@@ -113,14 +107,14 @@ export function App() {
 				<Input
 					disabled={false}
 					fullWidth
-					iconEnd={<Eye />}
+					iconEnd={<SvgEye />}
 					label={'Password input'}
 					variant={'password'}
 				/>
 				<Input
 					disabled
 					fullWidth={false}
-					iconEnd={<Eye />}
+					iconEnd={<SvgEye />}
 					label={'Password input'}
 					variant={'password'}
 				/>
@@ -128,8 +122,8 @@ export function App() {
 				<Input
 					disabled={false}
 					fullWidth={false}
-					iconEnd={<Close />}
-					iconStart={<Search />}
+					iconEnd={<SvgClose />}
+					iconStart={<SvgSearch />}
 					label={'Search input'}
 					variant={'search'}
 				/>
@@ -137,50 +131,27 @@ export function App() {
 				<Input
 					disabled
 					fullWidth={false}
-					iconEnd={<Close />}
-					iconStart={<Search />}
+					iconEnd={<SvgClose />}
+					iconStart={<SvgSearch />}
 					label={'Search input'}
 					variant={'search'}
 				/>
 				<Input
 					errorMessage={'Error'}
 					fullWidth={false}
-					iconEnd={<Close />}
-					iconStart={<Search />}
+					iconEnd={<SvgClose />}
+					iconStart={<SvgSearch />}
 					label={'Search input'}
 					variant={'search'}
 				/>
 				<Input
 					disabled
 					fullWidth
-					iconEnd={<Close />}
-					iconStart={<Search />}
+					iconEnd={<SvgClose />}
+					iconStart={<SvgSearch />}
 					label={'Search input'}
 					variant={'search'}
 				/>
-			</div>
-			<div>
-				<Table.Root>
-					<Table.Head>
-						<Table.Tr>
-							<Table.Th>{'Name1'}</Table.Th>
-							<Table.Th>{'Name2'}</Table.Th>
-							<Table.Th>{'Name3'}</Table.Th>
-						</Table.Tr>
-					</Table.Head>
-					<Table.Body>
-						<Table.Tr>
-							<Table.Td>{'Val1'}</Table.Td>
-							<Table.Td>{'Val2'}</Table.Td>
-							<Table.Td>{'Val3'}</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
-							<Table.Td>{'Val1'}</Table.Td>
-							<Table.Td>{'Val2'}</Table.Td>
-							<Table.Td>{'Val3'}</Table.Td>
-						</Table.Tr>
-					</Table.Body>
-				</Table.Root>
 			</div>
 
 			<div>

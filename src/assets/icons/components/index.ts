@@ -1,4 +1,6 @@
 export { default as Close } from './Close'
+export { default as ExpandLess } from './ExpandLess'
+export { default as ExpandMore } from './ExpandMore'
 export { default as Eye } from './Eye'
 export { default as Logout } from './Logout'
 export { default as Search } from './Search'

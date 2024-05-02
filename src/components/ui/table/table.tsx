@@ -1,4 +1,7 @@
-import { ComponentProps, FC } from 'react'
+import { ComponentProps, ComponentPropsWithoutRef, FC, useState } from 'react'
+
+import SvgExpandLess from '@/assets/icons/components/ExpandLess'
+import ExpandMore from '@/assets/icons/components/ExpandMore'
 
 import s from './table.module.scss'
 
@@ -14,10 +17,32 @@ export const Head: FC<HeadProps> = (props) => {
 	return <thead className={s.head} {...props} />
 }
 
-export type ThProps = ComponentProps<'th'>
+export type ThProps = {
+	children: string
+	// less?: boolean
+} & ComponentPropsWithoutRef<'th'>
 
-export const Th: FC<ThProps> = (props) => {
-	return <th className={s.th} {...props} />
+export const Th: FC<ThProps> = ({ children, ...rest }) => {
+	const [less, setLess] = useState(true)
+
+	const onClickHandler = () => {
+		setLess(!less)
+	}
+
+	return (
+		<th className={s.th} {...rest}>
+			{children}
+			{less ? (
+				<span className={s.icon} onClick={onClickHandler}>
+					{<SvgExpandLess />}
+				</span>
+			) : (
+				<span className={s.icon} onClick={onClickHandler}>
+					{<ExpandMore />}
+				</span>
+			)}
+		</th>
+	)
 }
 
 export type BodyProps = ComponentProps<'tbody'>

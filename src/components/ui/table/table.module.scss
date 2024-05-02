@@ -20,6 +20,11 @@
 
 	.th {
 		padding: 6px 29px;
+
+		.icon {
+			color: var(--color-light-100);
+			padding-left: 4px;
+		}
 	}
 
 	.td {
@@ -28,6 +33,15 @@
 		font-weight: var(--font-weight-regular);
 		font-size: var(--font-size-s);
 		line-height: var(--line-height-m);
+
+		div {
+			display: flex;
+			align-items: center;
+
+			img {
+				padding-right: 10px;
+			}
+		}
 	}
 }
 
