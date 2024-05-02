@@ -2,11 +2,13 @@ import SvgClose from '@/assets/icons/components/close'
 import SvgEye from '@/assets/icons/components/eye'
 import SvgLogout from '@/assets/icons/components/logout'
 import SvgSearch from '@/assets/icons/components/search'
+import SvgStar from '@/assets/icons/components/star'
 import image from '@/assets/img/image.png'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card/card'
 import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
 import { Input } from '@/components/ui/input/input'
+import Rating from '@/components/ui/rating/rating'
 import { Table } from '@/components/ui/table'
 import { Typography } from '@/components/ui/typography/typography'
 
@@ -18,9 +20,11 @@ export function App() {
 				<Table.Root>
 					<Table.Head>
 						<Table.Tr>
-							<Table.Th>{'Name1'}</Table.Th>
-							<Table.Th>{'Name2'}</Table.Th>
-							<Table.Th>{'Name3'}</Table.Th>
+							<Table.Th>{'Name'}</Table.Th>
+							<Table.Th>{'Name'}</Table.Th>
+							<Table.Th>{'Name'}</Table.Th>
+							<Table.Th>{'Name'}</Table.Th>
+							<Table.Th>{'Name'}</Table.Th>
 						</Table.Tr>
 					</Table.Head>
 					<Table.Body>
@@ -33,11 +37,10 @@ export function App() {
 							</Table.Td>
 							<Table.Td>{'Name'}</Table.Td>
 							<Table.Td>{'Name'}</Table.Td>
-						</Table.Tr>
-						<Table.Tr>
 							<Table.Td>{'Name'}</Table.Td>
-							<Table.Td>{'Name'}</Table.Td>
-							<Table.Td>{'Name'}</Table.Td>
+							<Table.Td>
+								<Rating />
+							</Table.Td>
 						</Table.Tr>
 					</Table.Body>
 				</Table.Root>
