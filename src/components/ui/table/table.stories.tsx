@@ -3,15 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Table } from './table'
 
 const meta = {
-	argTypes: {
-		// title: {
-		//     control: { type: 'text' },
-		// },
-		// variant: {
-		//     control: { type: 'radio' },
-		//     options: ['default', 'password', 'search'],
-		// },
-	},
+	argTypes: {},
 	component: Table.Root,
 	tags: ['autodocs'],
 	title: 'Components/Table',
@@ -56,19 +48,3 @@ export const Default: Story = {
 		),
 	},
 }
-
-// export const Password: Story = {
-//     args: {
-//         disabled: false,
-//         label: 'Input',
-//         variant: 'password',
-//     },
-// }
-//
-// export const Search: Story = {
-//     args: {
-//         disabled: false,
-//         label: 'Search input_old',
-//         variant: 'search',
-//     },
-// }

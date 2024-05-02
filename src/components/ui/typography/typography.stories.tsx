@@ -4,10 +4,10 @@ import { Typography } from './typography'
 
 const meta = {
 	argTypes: {
-		// color: {
-		// 	control: { type: 'radio' },
-		// 	options: ['light', 'dark'],
-		// },
+		color: {
+			control: { type: 'radio' },
+			options: ['light', 'dark'],
+		},
 		// text: {
 		// 	control: { type: 'text' },
 		// },
@@ -33,6 +33,7 @@ const meta = {
 	parameters: {
 		backgrounds: {
 			default: 'dark',
+			disable: false,
 			values: [
 				{ name: 'dark', value: '#000' },
 				{ name: 'light', value: '#fff' },
