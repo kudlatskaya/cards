@@ -22,6 +22,7 @@ export function App() {
 				}}
 			>
 				<form
+					action={'/user-login'}
 					method={'POST'}
 					style={{
 						color: 'black',
@@ -35,9 +36,7 @@ export function App() {
 					<input name={'rememberMe'} type={'checkbox'} />
 					<input name={'favoriteColor'} type={'color'} />
 					<input name={'dob'} type={'date'} />
-					<button style={{ backgroundColor: 'white' }} type={'submit'}>
-						Submit
-					</button>
+					<button style={{ backgroundColor: 'white' }}>Submit</button>
 				</form>
 			</div>
 			{/*<div>*/}
