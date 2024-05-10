@@ -1,7 +1,8 @@
 import { useForm } from 'react-hook-form'
 
-import { Button } from '../../ui/button'
-import { TextField } from '../../ui/text-field'
+import { Button } from '@/components/ui/button'
+//import { TextField } from '@/components/ui/text-field'
+import { Input } from '@/components/ui/input'
 
 type FormValues = {
 	email: string
@@ -17,8 +18,8 @@ export const LoginForm = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<TextField {...register('email')} label={'email'} />
-			<TextField {...register('password')} label={'password'} />
+			<Input {...register('email')} label={'email'} />
+			<Input {...register('password')} label={'password'} />
 			<Button type={'submit'}>Submit</Button>
 		</form>
 	)
