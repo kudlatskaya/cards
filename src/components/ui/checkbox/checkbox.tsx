@@ -5,10 +5,10 @@ import s from './checkbox.module.scss'
 
 export type Props = {
 	disabled?: boolean
-	text?: string
+	label?: string
 }
 
-export const CheckboxComponent = ({ disabled, text }: Props) => (
+export const CheckboxComponent = ({ disabled, label }: Props) => (
 	<form>
 		<div style={{ alignItems: 'center', display: 'flex', gap: '11px' }}>
 			<Checkbox.Root className={s.checkbox} defaultChecked disabled={disabled} id={'c1'}>
@@ -17,7 +17,7 @@ export const CheckboxComponent = ({ disabled, text }: Props) => (
 				</Checkbox.Indicator>
 			</Checkbox.Root>
 			<label className={'Label'} htmlFor={'c1'}>
-				{text}
+				{label}
 			</label>
 		</div>
 	</form>

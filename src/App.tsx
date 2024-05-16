@@ -12,6 +12,8 @@
 // import { Table } from '@/components/ui/table'
 // import { Typography } from '@/components/ui/typography/typography'
 
+import { LoginForm } from '@/components/auth/login-form/login-form'
+
 export function App() {
 	// @ts-ignore
 	return (
@@ -39,6 +41,7 @@ export function App() {
 					<button style={{ backgroundColor: 'white' }}>Submit</button>
 				</form>
 			</div>
+			<LoginForm />
 			{/*<div>*/}
 			{/*	<Table.Root>*/}
 			{/*		<Table.Head>*/}

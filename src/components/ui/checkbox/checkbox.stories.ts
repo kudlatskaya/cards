@@ -4,7 +4,7 @@ import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
 
 const meta = {
 	argTypes: {
-		text: {
+		label: {
 			control: { type: 'text' },
 		},
 	},
