@@ -27,6 +27,8 @@ export const Input = <T extends ElementType = 'input'>(props: InputProps<T>) => 
 		...rest
 	} = props
 
+	// console.log(props)
+
 	const paddingsStyle = iconStart ? s.paddings : ''
 
 	return (
