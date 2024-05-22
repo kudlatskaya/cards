@@ -1,15 +1,11 @@
 import { useController, useForm } from 'react-hook-form'
 
+import { FormValues, loginSchema } from '@/components/auth/login-form/validation'
+import { ControlledCheckbox } from '@/components/controlled/controlled-checkbox'
 import { Button } from '@/components/ui/button'
 import { CheckboxComponent } from '@/components/ui/checkbox'
 import { Input } from '@/components/ui/input'
-//import { TextField } from '@/components/ui/text-field'
-
-type FormValues = {
-	email: string
-	password: string
-	rememberMe: boolean
-}
+import { zodResolver } from '@hookform/resolvers/zod'
 
 export const LoginForm = () => {
 	const {
@@ -17,9 +13,9 @@ export const LoginForm = () => {
 		formState: { errors },
 		handleSubmit,
 		register,
-	} = useForm<FormValues>()
-
-	// console.log('errors: ', errors)
+	} = useForm<FormValues>({
+		resolver: zodResolver(loginSchema),
+	})
 
 	const onSubmit = (data: FormValues) => {
 		console.log(data)
@@ -33,28 +29,11 @@ export const LoginForm = () => {
 		name: 'rememberMe',
 	})
 
-	const emailRegex =
-		/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/
-
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			{/*<Input {...register('email')} label={'email'} />*/}
-			{/*<Input {...register('password')} label={'password'} />*/}
-			<Input
-				{...register('email', {
-					pattern: { message: 'Invalid email', value: emailRegex },
-					required: 'Email is required',
-				})}
-				label={'email'}
-			/>
-			<Input
-				{...register('password', {
-					minLength: { message: 'Password has to be at least 3 characters long', value: 3 },
-					required: 'Password is required',
-				})}
-				label={'password'}
-			/>
-			<CheckboxComponent checked={value} label={'Remember me'} onChange={onChange} />
+			<Input {...register('email')} errorMessage={errors.email?.message} label={'email'} />
+			<Input {...register('password')} errorMessage={errors.password?.message} label={'password'} />
+			<ControlledCheckbox control={control} label={'remember me'} name={'rememberMe'} />
 			<Button type={'submit'}>Submit</Button>
 		</form>
 	)
