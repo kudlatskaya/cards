@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Close from '@/assets/icons/components/Close'
-import Eye from '@/assets/icons/components/Eye'
-import Search from '@/assets/icons/components/Search'
+import Close from '@/assets/icons/components/close'
+import Eye from '@/assets/icons/components/eye'
+import Search from '@/assets/icons/components/search'
 
 import { Input } from './input'
 

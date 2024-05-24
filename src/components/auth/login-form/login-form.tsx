@@ -3,7 +3,6 @@ import { useController, useForm } from 'react-hook-form'
 import { FormValues, loginSchema } from '@/components/auth/login-form/validation'
 import { ControlledCheckbox } from '@/components/controlled/controlled-checkbox'
 import { Button } from '@/components/ui/button'
-import { CheckboxComponent } from '@/components/ui/checkbox'
 import { Input } from '@/components/ui/input'
 import { zodResolver } from '@hookform/resolvers/zod'
 
@@ -22,7 +21,7 @@ export const LoginForm = () => {
 	}
 
 	const {
-		field: { onChange, value },
+		field: {},
 	} = useController({
 		control,
 		defaultValue: false,
