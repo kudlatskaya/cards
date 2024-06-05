@@ -1,2 +1,7 @@
 export { default as Close } from './close'
+export { default as Eye } from './eye'
+export { default as Less } from './less'
+export { default as Logout } from './logout'
+export { default as More } from './more'
 export { default as Search } from './search'
+export { default as Star } from './star'

@@ -1,7 +1,7 @@
 import { ComponentProps, ComponentPropsWithoutRef, FC, useState } from 'react'
 
-import SvgExpandLess from '@/assets/icons/components/ExpandLess'
-import ExpandMore from '@/assets/icons/components/ExpandMore'
+import SvgExpandLess from '@/assets/icons/components/less'
+import ExpandMore from '@/assets/icons/components/more'
 
 import s from './table.module.scss'
 

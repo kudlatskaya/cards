@@ -1,17 +1,16 @@
-// import SvgClose from '@/assets/icons/components/close'
-// import SvgEye from '@/assets/icons/components/eye'
-// import SvgLogout from '@/assets/icons/components/logout'
-// import SvgSearch from '@/assets/icons/components/search'
-// import SvgStar from '@/assets/icons/components/star'
+import Close from '@/assets/icons/components/close'
+// import Eye from '@/assets/icons/components/eye'
+// import Logout from '@/assets/icons/components/logout'
+import Search from '@/assets/icons/components/search'
+// import Star from '@/assets/icons/components/star'
 // import image from '@/assets/img/image.png'
 // import { Button } from '@/components/ui/button'
 // import { Card } from '@/components/ui/card/card'
 // import { CheckboxComponent } from '@/components/ui/checkbox/checkbox'
-// import { Input } from '@/components/ui/input/input'
+import { Input } from '@/components/ui/input/input'
 // import Rating from '@/components/ui/rating/rating'
 // import { Table } from '@/components/ui/table'
 // import { Typography } from '@/components/ui/typography/typography'
-
 import { LoginForm } from '@/components/auth/login-form/login-form'
 
 export function App() {
@@ -136,48 +135,48 @@ export function App() {
 			{/*	<Input*/}
 			{/*		disabled={false}*/}
 			{/*		fullWidth*/}
-			{/*		iconEnd={<SvgEye />}*/}
+			{/*		iconEnd={<Eye />}*/}
 			{/*		label={'Password input'}*/}
 			{/*		variant={'password'}*/}
 			{/*	/>*/}
 			{/*	<Input*/}
 			{/*		disabled*/}
 			{/*		fullWidth={false}*/}
-			{/*		iconEnd={<SvgEye />}*/}
+			{/*		iconEnd={<Eye />}*/}
 			{/*		label={'Password input'}*/}
 			{/*		variant={'password'}*/}
 			{/*	/>*/}
 
-			{/*	<Input*/}
-			{/*		disabled={false}*/}
-			{/*		fullWidth={false}*/}
-			{/*		iconEnd={<SvgClose />}*/}
-			{/*		iconStart={<SvgSearch />}*/}
-			{/*		label={'Search input'}*/}
-			{/*		variant={'search'}*/}
-			{/*	/>*/}
+			<Input
+				disabled={false}
+				fullWidth={false}
+				iconEnd={<Close />}
+				iconStart={<Search />}
+				label={'Search input'}
+				variant={'search'}
+			/>
 
 			{/*	<Input*/}
 			{/*		disabled*/}
 			{/*		fullWidth={false}*/}
-			{/*		iconEnd={<SvgClose />}*/}
-			{/*		iconStart={<SvgSearch />}*/}
+			{/*		iconEnd={<Close />}*/}
+			{/*		iconStart={<Search />}*/}
 			{/*		label={'Search input'}*/}
 			{/*		variant={'search'}*/}
 			{/*	/>*/}
 			{/*	<Input*/}
 			{/*		errorMessage={'Error'}*/}
 			{/*		fullWidth={false}*/}
-			{/*		iconEnd={<SvgClose />}*/}
-			{/*		iconStart={<SvgSearch />}*/}
+			{/*		iconEnd={<Close />}*/}
+			{/*		iconStart={<Search />}*/}
 			{/*		label={'Search input'}*/}
 			{/*		variant={'search'}*/}
 			{/*	/>*/}
 			{/*	<Input*/}
 			{/*		disabled*/}
 			{/*		fullWidth*/}
-			{/*		iconEnd={<SvgClose />}*/}
-			{/*		iconStart={<SvgSearch />}*/}
+			{/*		iconEnd={<Close />}*/}
+			{/*		iconStart={<Search />}*/}
 			{/*		label={'Search input'}*/}
 			{/*		variant={'search'}*/}
 			{/*	/>*/}
