@@ -15,6 +15,7 @@ const SvgExpandLess = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) 
 	</svg>
 )
 const ForwardRef = forwardRef(SvgExpandLess)
-const Memo = memo(ForwardRef)
 
-export default Memo
+export const Memo = memo(ForwardRef)
+
+// export default Memo

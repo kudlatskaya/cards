@@ -19,6 +19,7 @@ const SvgSearch = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
 	</svg>
 )
 const ForwardRef = forwardRef(SvgSearch)
-const Memo = memo(ForwardRef)
 
-export default Memo
+export const Memo = memo(ForwardRef)
+
+// export default Memo
