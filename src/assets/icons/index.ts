@@ -7,7 +7,7 @@
 // export { default as Star } from '@/assets/icons/components/star'
 export * as Close from './components/Close'
 export * as Eye from './components/Eye'
-export * as Logout from './components/Logout'
+//export * as Logout from './components/Logout'
 export * as Less from './components/less'
 export * as More from './components/more'
 export * as Star from './components/star'

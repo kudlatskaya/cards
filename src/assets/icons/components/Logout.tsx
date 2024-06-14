@@ -1,7 +1,7 @@
 import type { SVGProps } from 'react'
-import { Ref, forwardRef, memo } from 'react'
+import { Ref } from 'react'
 
-const SvgLogout = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+export const Logout = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
 	<svg
 		fill={'currentColor'}
 		height={20}
@@ -18,8 +18,8 @@ const SvgLogout = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
 		/>
 	</svg>
 )
-const ForwardRef = forwardRef(SvgLogout)
+// const ForwardRef = forwardRef(SvgLogout)
 
-const Memo = memo(ForwardRef)
+// const Memo = memo(ForwardRef)
 
-export default Memo
+// export default Memo
