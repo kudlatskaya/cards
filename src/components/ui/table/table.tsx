@@ -1,7 +1,7 @@
 import { ComponentProps, ComponentPropsWithoutRef, FC, useState } from 'react'
 
-import SvgExpandLess from '@/assets/icons/components/less'
-import ExpandMore from '@/assets/icons/components/more'
+import Less from '@/assets/icons/components/less'
+import More from '@/assets/icons/components/more'
 
 import s from './table.module.scss'
 
@@ -34,11 +34,11 @@ export const Th: FC<ThProps> = ({ children, ...rest }) => {
 			{children}
 			{less ? (
 				<span className={s.icon} onClick={onClickHandler}>
-					{<SvgExpandLess />}
+					{<Less />}
 				</span>
 			) : (
 				<span className={s.icon} onClick={onClickHandler}>
-					{<ExpandMore />}
+					{<More />}
 				</span>
 			)}
 		</th>
