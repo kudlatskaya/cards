@@ -1,9 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Close from './assets/icons/components/close'
-import Eye from './assets/icons/components/eye'
-import Search from './assets/icons/components/search'
+
 import { Input } from './input'
+import { Eye } from '@/assets/icons/components/Eye'
+import { Close } from '@/assets/icons/components/Close'
+import { Search } from '@/assets/icons/components/Search'
 
 const meta = {
 	argTypes: {
