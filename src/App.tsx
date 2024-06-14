@@ -7,8 +7,11 @@ import { Input } from '@/components/ui/input/input'
 import Rating from '@/components/ui/rating/rating'
 import { Table } from '@/components/ui/table'
 import { Typography } from '@/components/ui/typography/typography'
-import {Search, Eye, Close} from './assets/icons/index'
+
 import { Logout } from './assets/icons/components/Logout'
+import { Search } from './assets/icons/components/Search'
+import { Eye } from './assets/icons/components/Eye'
+import { Close } from './assets/icons/components/Close'
 
 
 
