@@ -1,7 +1,0 @@
-export { Memo as Close } from './close'
-export { Memo as Eye } from './eye'
-export { Memo as Less } from './less'
-export { Memo as Logout } from './logout'
-export { Memo as More } from './more'
-export { Memo as Search } from './search'
-export { Memo as Star } from './star'

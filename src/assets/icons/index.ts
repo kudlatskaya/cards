@@ -1,0 +1,7 @@
+export { default as Close } from '@/assets/icons/components/close'
+export { default as Eye } from '@/assets/icons/components/eye'
+export { default as Less } from '@/assets/icons/components/less'
+export { default as Logout } from '@/assets/icons/components/logout'
+export { default as More } from '@/assets/icons/components/more'
+export { default as Search } from '@/assets/icons/components/search'
+export { default as Star } from '@/assets/icons/components/star'

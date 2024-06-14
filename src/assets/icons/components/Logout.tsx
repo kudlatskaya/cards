@@ -20,6 +20,6 @@ const SvgLogout = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
 )
 const ForwardRef = forwardRef(SvgLogout)
 
-export const Memo = memo(ForwardRef)
+const Memo = memo(ForwardRef)
 
-// export default Memo
+export default Memo
