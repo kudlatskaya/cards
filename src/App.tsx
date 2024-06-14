@@ -7,11 +7,9 @@ import { Input } from '@/components/ui/input/input'
 import Rating from '@/components/ui/rating/rating'
 import { Table } from '@/components/ui/table'
 import { Typography } from '@/components/ui/typography/typography'
+import { Close, Eye, Logout, Search } from './assets/icons'
 
-import Close from './assets/icons/components/close'
-import Eye from './assets/icons/components/eye'
-import Logout from './assets/icons/components/logout'
-import Search from './assets/icons/components/search'
+
 
 export function App() {
 	// @ts-ignore
